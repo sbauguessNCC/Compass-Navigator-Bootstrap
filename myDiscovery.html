@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Compass Discovery</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/Overrides.css" rel="stylesheet">
+  <link href="css/Compass.css" rel="stylesheet">
+
+
+
+</head>
+<main>
+
+  <body>
+    <!-- This is the START of the Header-->
+    <div class="container-fluid menu-border-bottom">
+      <div class="row flex-nowrap">
+        <div class="col-1 d-none d-md-flex flex-wrap align-items-center compassLogo ">
+          <span class="mx-auto"><img src="Images/CompassLogo.svg"></span>
+        </div>
+        <nav class="navbar navbar-expand-xl d-flex flex-wrap justify-content-center py-4 mb-0 col flex-grow-1"
+          aria-label="Offcanvas navbar large">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="custom-logo ps-3" src="Images/CompassDiscoveryLogo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+              aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
+              aria-labelledby="offcanvasNavbar2Label">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbar2Label">User Name</h5>
+                <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="pe-3 btn-group">
+                  <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="Images/Placeholders/Profile1.jpg" alt="User Profile Photo" width="45" height="45" class="rounded-circle">
+                  </a>
+                  <ul class="dropdown-menu text-small  dropdown-menu-lg-end">
+                    <h5 class="dropdown-header">User Name</h5>
+                    <li><a class="dropdown-item" href="#">My Discovery</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 order-md-first">
+                  <li class="nav-item pe-3"><a href="index.html" class="nav-link"  >Home</a></li>
+                  <li class="nav-item pe-3"><a href="myDiscovery.html" class="nav-link active" aria-current="page" >My Discovery</a></li> 
+                  <li class="nav-item pe-3"><a href="Contents.html" class="nav-link">Contents</a></li>
+                  <li class="nav-item pe-3"><a href="Enroll.html" class="nav-link">Enroll</a></li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- This is the END of the Header-->
+    <!-- This is the START of the the body-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1">
+          <h1 class="main-header-title">MY DISCOVERY</h1>
+        </div>
+        <div class="col-md-11">
+          <div class="album py-5">
+            <div class="container-fluid ">
+              <!-- This is the START of the the SHOWCARD including the modal and interactive buttons-->
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/Placeholders/Image 8.png" class="card-img-top" width="100%" height="225">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal1">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck1a"
+                          data-bs-toggle="modal" data-bs-target="#markCompleteModal1">
+                        <label class="form-check-label small" for="exampleCheck1a" data-bs-toggle="modal"
+                          data-bs-target="#markCompleteModal1">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <!-- MODAL for View Details each needs is't own id-->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Insider Threat Awareness</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        This course provides a thorough understanding of how Insider Threat Awareness is an essential
+                        component of a comprehensive security program. With a theme of, "If you see something, say
+                        something" the course promotes the reporting of suspicious activities observed within the place
+                        of duty. Using a few case study scenarios, the course teaches the common indicators which
+                        highlight actions and behaviors that can signify an insider threat. The instruction promotes a
+                        proactive approach to reporting the suspicious activities.
+                      </div>
+                      <div class="modal-footer d-flex justify-content-start">
+                        
+                        
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck1a"
+                          data-bs-toggle="modal" data-bs-target="#markCompleteModal1">
+                        <label class="form-check-label small" for="exampleCheck1a" data-bs-toggle="modal"
+                          data-bs-target="#markCompleteModal1">Mark as Complete</label><button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2" data-bs-toggle="modal" data-bs-target="#unenrollModal1">Unenroll</button>
+                        </div>
+                      
+                      <div class="modal-footer d-flex justify-content-start"><button type="button" class="btn btn-sm btn-primary mt-1 me-2">Launch in New Window</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- MODAL for Unenrollment each needs is't own id-->
+                <div class="modal fade" id="unenrollModal1" tabindex="-1" aria-labelledby="unenrollModal1"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="unenrollModal1">Unenroll in this course</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Unenrolling will revoke your access to all the course materials, assignments, and certificates.
+                        However, you can always enroll again in the future if you change your mind. Please confirm that
+                        you want to unenroll by clicking the button below.
+                      </div>
+                      <div class="modal-footer d-flex justify-content-start">
+                        
+                        <button type="button" class="btn btn-sm btn-primary mt-1 me-2">Yes, I want to
+                          unenroll</button>
+                          <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- MODAL for Mark as Complete each needs is't own id-->
+                <div class="modal fade" id="markCompleteModal1" tabindex="-1" aria-labelledby="markCompleteModal1"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="markCompleteModal1">Mark as Complete</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        This course provides a thorough understanding of how Insider Threat Awareness is an essential
+                        component of a comprehensive security program. With a theme of, &quot;If you see something, say
+                        something&quot; the course promotes the reporting of suspicious activities observed within the
+                        place of duty. Using a few case study scenarios, the course teaches the common indicators which
+                        highlight actions and behaviors that can signify an insider threat. The instruction promotes a
+                        proactive approach to reporting the suspicious activities.
+                      </div>
+                      <div class="modal-footer d-flex justify-content-start">
+                        
+                        <button type="button" class="btn btn-sm btn-primary mt-1 me-2">Yes, I want to mark this
+                          as complete</button>
+                          <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- This is the END of the the SHOWCARD including the modal and interactive buttons-->
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex  align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck2a">
+                        <label class="form-check-label small" for="exampleCheck2a">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck3a">
+                        <label class="form-check-label small" for="exampleCheck3a">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck4a">
+                        <label class="form-check-label small" for="exampleCheck4a">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-body-secondary">
+      <div class="row">
+        <div class="col-md-1">
+          <h1 class="main-header-title">COMPLETED</h1>
+        </div>
+        <div class="col-md-11">
+          <div class="album py-5">
+            <div class="container-fluid">
+
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck1">
+                        <label class="form-check-label small" for="exampleCheck1">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck2">
+                        <label class="form-check-label small" for="exampleCheck2">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck3">
+                        <label class="form-check-label small" for="exampleCheck3">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <div class="card-image-container">
+                      <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                        <input type="checkbox" class="form-check-input green-circle-check me-1" id="exampleCheck4">
+                        <label class="form-check-label small" for="exampleCheck4">Mark as Complete</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- This is the END of the the body-->
+    <!-- This is the START of the Footer-->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 compass-footer  ">
+      <p class="col-4 mb-0 "> </p>
+
+      <a href="/"
+          class="col-4 d-flex align-items-center justify-content-center mb-3 mb-0 me-auto link-body-emphasis text-decoration-none">
+          <img src="Images/FooterLogo.png" alt="">
+      </a>
+
+
+  </footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</main>
+</body>

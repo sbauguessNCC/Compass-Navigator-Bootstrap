@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Compass Discovery</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.11.1/bootstrap-icons.css">
+    <link href="css/Overrides.css" rel="stylesheet">
+    <link href="css/Compass.css" rel="stylesheet">
+
+
+
+
+</head>
+<main>
+
+    <body>
+        <!-- This is the START of the Header-->
+        <div class="container-fluid menu-border-bottom">
+            <div class="row flex-nowrap">
+              <div class="col-1 d-none d-md-flex flex-wrap align-items-center compassLogo ">
+                <span class="mx-auto"><img src="Images/CompassLogo.svg"></span>
+              </div>
+              <nav class="navbar navbar-expand-xl d-flex flex-wrap justify-content-center py-4 mb-0 col flex-grow-1"
+                aria-label="Offcanvas navbar large">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img class="custom-logo ps-3" src="Images/CompassDiscoveryLogo.png"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                    aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbar2Label">User Name</h5>
+                      <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="pe-3 btn-group">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <img src="Images/Placeholders/Profile1.jpg" alt="User Profile Photo" width="45" height="45" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small  dropdown-menu-lg-end">
+                          <h5 class="dropdown-header">User Name</h5>
+                          <li><a class="dropdown-item" href="#">My Discovery</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                      </div>
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 order-md-first">
+                        <li class="nav-item pe-3"><a href="index.html" class="nav-link"  >Home</a></li>
+                        <li class="nav-item pe-3"><a href="myDiscovery.html" class="nav-link" >My Discovery</a></li> 
+                        <li class="nav-item pe-3"><a href="Contents.html"  class="nav-link">Contents</a></li>
+                        <li class="nav-item pe-3"><a href="Enroll.html" class="nav-link active" aria-current="page">Enroll</a></li>
+                      </ul>
+                     
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        <!-- This is the END of the Header-->
+        <!-- This is the START of the the body-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                    <h1 class="main-header-title">PARTICIPANTS</h1>
+                </div>
+                <div class="col-md-11 py-2 py-md-5">
+                    <div class="container-fluid">
+                        
+                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <h4>Register Multiple Participants</h4>
+                                A list of signup instructions goes here. If needed this can be a collapsible area for longer instructions. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.                           
+                          
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+
+                        <div class="row pt-1 p-2">
+                            <div class="col-md-2 d-none d-md-block">
+                                <b>First name</b>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <b>Last name</b>
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <b>Email</b>
+                            </div>
+                            <div class="col-md-2 d-none d-md-block">
+                                <b>Enroll in all content</b>
+                             </div>
+                             <div class="col-md-2 d-none d-md-block">
+                                <b>Remove Row</b>
+                             </div>
+                        </div>
+                       <div class="row bg-body-secondary p-2 align-items-center">
+                            <div class="col-md-2">
+                                <label for="firstName" class="form-label d-md-none">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="lastName" class="form-label d-md-none">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Email" class="form-label d-md-none">Email</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check"><label class="form-check-label" for="same-address">Enroll in all content</label>
+                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                </div>
+                             </div>
+                             <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-trash3-fill"></i> Remove</button>
+                             </div>
+                        </div>
+                        <div class="row bg-body-primary p-2 align-items-center">
+                            <div class="col-md-2">
+                                <label for="firstName" class="form-label d-md-none">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="lastName" class="form-label d-md-none">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Email" class="form-label d-md-none">Email</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check"><label class="form-check-label" for="same-address">Enroll in all content</label>
+                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                </div>
+                             </div>
+                             <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-trash3-fill"></i> Remove</button>
+                             </div>
+                        </div>
+                        <div class="row bg-body-secondary p-2 align-items-center">
+                            <div class="col-md-2">
+                                <label for="firstName" class="form-label d-md-none">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="lastName" class="form-label d-md-none">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Email" class="form-label d-md-none">Email</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check"><label class="form-check-label" for="same-address">Enroll in all content</label>
+                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                </div>
+                             </div>
+                             <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-trash3-fill"></i> Remove</button>
+                             </div>
+                        </div>
+                        <div class="row bg-body-primary p-2 align-items-center">
+                            <div class="col-md-2">
+                                <label for="firstName" class="form-label d-md-none">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="lastName" class="form-label d-md-none">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Email" class="form-label d-md-none">Email</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-check"><label class="form-check-label" for="same-address">Enroll in all content</label>
+                                    <input type="checkbox" class="form-check-input" id="same-address">
+                                </div>
+                             </div>
+                             <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary"><i class="bi bi-trash3-fill"></i> Remove</button>
+                             </div>
+                        </div>
+                        <div class="row bg-body-primary p-2">
+                            <div class="col-md-12">
+                               <button type="button" class="btn btn-primary"><i class="bi bi-plus-square-dotted"></i> Add Row</button>
+                             </div>
+                        </div>
+                        <div class="row bg-body-primary p-2 center">
+                            <div class="col-12 d-flex justify-content-center text-center">
+                               <button type="button" class="btn btn-primary btn-lg mx-auto">Submit</button>
+                             
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is the END of the the body-->
+       <!-- This is the START of the Footer-->
+       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 compass-footer  ">
+        <p class="col-4 mb-0"> </p>
+
+        <a href="/"
+            class="col-4 d-flex align-items-center justify-content-center mb-3 mb-0 me-auto link-body-emphasis text-decoration-none">
+            <img src="Images/FooterLogo.png" alt="">
+        </a>
+
+
+    </footer>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+</main>
+</body>

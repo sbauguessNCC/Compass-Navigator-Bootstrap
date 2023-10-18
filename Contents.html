@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Compass Discovery</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.11.1/bootstrap-icons.css">
+    <link href="css/Overrides.css" rel="stylesheet">
+    <link href="css/Compass.css" rel="stylesheet">
+
+
+
+
+</head>
+<main>
+
+    <body>
+        <!-- This is the START of the Header-->
+        <div class="container-fluid menu-border-bottom">
+            <div class="row flex-nowrap">
+              <div class="col-1 d-none d-md-flex flex-wrap align-items-center compassLogo ">
+                <span class="mx-auto"><img src="Images/CompassLogo.svg"></span>
+              </div>
+              <nav class="navbar navbar-expand-xl d-flex flex-wrap justify-content-center py-4 mb-0 col flex-grow-1"
+                aria-label="Offcanvas navbar large">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img class="custom-logo ps-3" src="Images/CompassDiscoveryLogo.png"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                    aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbar2Label">User Name</h5>
+                      <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="pe-3 btn-group">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <img src="Images/Placeholders/Profile1.jpg" alt="User Profile Photo" width="45" height="45" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small  dropdown-menu-lg-end">
+                          <h5 class="dropdown-header">User Name</h5>
+                          <li><a class="dropdown-item" href="#">My Discovery</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                      </div>
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 order-md-first">
+                        <li class="nav-item pe-3"><a href="index.html" class="nav-link"  >Home</a></li>
+                        <li class="nav-item pe-3"><a href="myDiscovery.html" class="nav-link" >My Discovery</a></li> 
+                        <li class="nav-item pe-3"><a href="Contents.html"  class="nav-link active" aria-current="page">Contents</a></li>
+                        <li class="nav-item pe-3"><a href="Enroll.html" class="nav-link">Enroll</a></li>
+                      </ul>
+                     
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        <!-- This is the END of the Header-->
+        <!-- This is the START of the the body-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                    <h1 class="main-header-title">CONTENTS</h1>
+                </div>
+                <div class="col-md-11">
+                    <div class="album py-md-2"><!-- This is different than other pages py-md-3 is used to acomidate the cart-->
+                        <div class="container-fluid">
+                            <!-- This is the START of the the Cart icon-->
+                            <div class="text-end pb-1 sticky-top bg-body pt-2">
+                                <span class="position-relative text-end align-middle">
+                                    <span class="text-primary translate-middle top-0 start-100 small"></span><img src="Images/Cart.svg" width="30" height="30">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-orange">
+                                        3
+                                        <span class="visually-hidden">items in cart</span> 
+                                    </span>
+                                    
+                                </span>
+                                <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#CartModal">Add to My Discovery</button>
+                            </div>
+                            <!-- This is the shopping cart MODAL-->
+                            <div class="modal fade" id="CartModal" tabindex="-1" aria-labelledby="CartModal"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Your Content Cart</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                
+                                                    <p>The selected items will be added to My Discovery.</p>
+                                                    <div class="d-flex align-items-center p-1">
+                                                        <input type="checkbox" class="form-check-input orange-circle-check me-2" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck1">Insider Threat Awarness</label>
+                                                     </div>
+                                                     <div class="d-flex align-items-center p-1">
+                                                        <input type="checkbox" class="form-check-input orange-circle-check me-2" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck2">Content Title Placeholder</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center p-1">
+                                                        <input type="checkbox" class="form-check-input orange-circle-check me-2" id="exampleCheck1" checked>
+                                                        <label class="form-check-label" for="exampleCheck3">Content Title Placeholder</label>
+                                                    </div>
+                                               
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <button type="button" class="btn btn-sm btn-primary mt-1 me-2">Add the selected items to My Discovery</button>
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- This is the START of the the SHOWCARD including the modal and interactive buttons-->
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/Placeholders/Image 8.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal1">View
+                                                    Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck1">
+                                                <label class="form-check-label small" for="exampleCheck1">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Insider Threat
+                                                    Awareness</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </div>
+                                            <div class="modal-footer d-flex justify-content-start">
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck2">
+                                                <label class="form-check-label small" for="exampleCheck2">Add to Cart</label>
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-1 me-2">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- This is the END of the the SHOWCARD including the modal and interactive buttons-->
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex  align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary mt-1 me-2 ">View
+                                                    Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck2">
+                                                <label class="form-check-label small" for="exampleCheck2">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary mt-1 me-2 ">View Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck3">
+                                                <label class="form-check-label small" for="exampleCheck3">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary mt-1 me-2 ">View
+                                                    Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck4">
+                                                <label class="form-check-label small" for="exampleCheck4">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary mt-1 me-2 ">View
+                                                    Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck4">
+                                                <label class="form-check-label small" for="exampleCheck4">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary mt-1 me-2 ">View
+                                                    Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck4">
+                                                <label class="form-check-label small" for="exampleCheck4">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary mt-1 me-2 ">View
+                                                    Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck4">
+                                                <label class="form-check-label small" for="exampleCheck4">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <div class="card-image-container">
+                                            <img src="Images/PlaceholderBlank.png" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-title text-primary">Insider Threat Awareness</h6>
+                                            <p class="card-body small p-0  truncate">
+                                                This course provides a thorough understanding of how Insider Threat
+                                                Awareness is an essential component of a comprehensive security program.
+                                                With a theme of, "If you see something, say something" the course
+                                                promotes the reporting of suspicious activities observed within the
+                                                place of duty. Using a few case study scenarios, the course teaches the
+                                                common indicators which highlight actions and behaviors that can signify
+                                                an insider threat. The instruction promotes a proactive approach to
+                                                reporting the suspicious activities.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-primary mt-1 me-2 ">View
+                                                    Details</button>
+                                                <input type="checkbox" class="form-check-input orange-circle-check me-1"
+                                                    id="exampleCheck4">
+                                                <label class="form-check-label small" for="exampleCheck4">Add to Cart</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- This is the END of the the body-->
+       <!-- This is the START of the Footer-->
+       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 compass-footer  ">
+        <p class="col-4 mb-0 "> </p>
+
+        <a href="/"
+            class="col-4 d-flex align-items-center justify-content-center mb-3 mb-0 me-auto link-body-emphasis text-decoration-none">
+            <img src="Images/FooterLogo.png" alt="">
+        </a>
+
+
+    </footer>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+</main>
+</body>
