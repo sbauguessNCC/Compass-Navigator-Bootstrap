@@ -22,7 +22,7 @@
       <div class="container-fluid">
         <div><a class="navbar-brand" href="#"><img src="Images/CompassLogo.svg" height="40px"></span></a>
           <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse"
-            class="border rounded-3 p-1 text-decoration-none text-light  d-lg-none d-inline"><i
+            class="border rounded-3 p-1 text-decoration-none text-light   d-inline"><i
               class="bi bi-list bi-lg py-2 p-1"></i> Menu</a>
         </div>
 
@@ -46,10 +46,10 @@
       </div>
     </nav>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="row flex-nowrap">
-        <div class="col-auto px-0">
-          <div id="sidebar" class="collapse collapse-horizontal show border-0 collapseExample">
+        <div class="col-auto px-0 shadow z-3">
+          <div id="sidebar" class=" collapse collapse-horizontal show border-0 collapseLeft ">
             <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start">
               <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
                 <span class="fs-5 px-3 py-5 mt-1"><img src="Images/Placeholders/Logo Placeholder.png"></span>
@@ -67,7 +67,7 @@
             </div>
           </div>
         </div>
-        <main class="col ps-md-2 py-3 compass-bg-body-darkgray">
+        <main class="col py-3 compass-bg-body-darkgray">
           <div class="container-fluid">
             <div class="row">
               <!-- Opening message-->
@@ -75,217 +75,369 @@
                 <p class="lead">Good afternoon, <strong>Shawn!</strong> Welcome to your change journey navigator.</p>
               </div>
             </div>
-            <div class="row mb-lg-3">
-              <div class="col-lg-7 m-0 p-0">
-                <div class="card mx-3 mb-3 border-0">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-6">
-                        <h5 class="card-title">My Events</h5>
-                      </div>
-                      <div class="col-6 justify-content-end text-end">
-                        <div class="cal-month">
-                          <button class="btn cal-btn" type="button">
-                            <i class="bi bi-arrow-left"></i>
-                          </button>
-                          <strong class="cal-month-name">June</strong>
-                          <select class="form-select cal-month-name d-none">
-                            <option value="January">January</option>
-                            <option value="February">February</option>
-                            <option value="March">March</option>
-                            <option value="April">April</option>
-                            <option value="May">May</option>
-                            <option selected="" value="June">June</option>
-                            <option value="July">July</option>
-                            <option value="August">August</option>
-                            <option value="September">September</option>
-                            <option value="October">October</option>
-                            <option value="November">November</option>
-                            <option value="December">December</option>
-                          </select>
-                          <button class="btn cal-btn" type="button">
-                            <i class="bi bi-arrow-right"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height: 200px;" data-bs-spy="scroll" data-bs-target="#navbar-example2"
-                      data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class=" w-100 m-0 overflow-auto"
-                      tabindex="0">
-                      <div class="container-fluid m-0 p-0"></div>
-                      <div class="row m-0 p-0">
-                        <div class="col-2 text-center"><span class="display-6">08</span><br>MON</div>
-                        <div class="col-10">
-                          <div class="row rounded bg-primary text-light justify-content-between my-1">
-                            <div class="col-sm-6">Event title</div>
-                            <div class="col-sm-6 text-end">9:00am-10:00am</div>
+            <!-- NOTE: The widet cards must be in a col for aligment -->
+            <!-- Row 1 of widgets-->
+            <div class="row">
+              <!-- Col 1 of widgets-->
+              <div class="col-lg-8 p-0">
+                <div class="row">
+                  <!-- My Events widget -->
+                  <div class="col-12 pb-3">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6">
+                            <h5 class="card-title">My Events</h5>
                           </div>
-                          <div class="row rounded bg-primary text-light justify-content-between my-1">
-                            <div class="col-sm-6">Event title</div>
-                            <div class="col-sm-6 text-end">9:00am-10:00am</div>
-                          </div>
-                          <div class="row rounded bg-primary text-light justify-content-between my-1">
-                            <div class="col-sm-6">Event title</div>
-                            <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                          <div class="col-6 justify-content-end text-end">
+                            <div class="cal-month">
+                              <button class="btn cal-btn" type="button">
+                                <i class="bi bi-arrow-left"></i>
+                              </button>
+                              <strong class="cal-month-name">June</strong>
+                              <select class="form-select cal-month-name d-none">
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option selected="" value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                              </select>
+                              <button class="btn cal-btn" type="button">
+                                <i class="bi bi-arrow-right"></i>
+                              </button>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <hr>
-                      <div class="row row m-0 p-0">
-                        <div class="col-2 text-center"><span class="display-6">09</span><br>TUE</div>
-                        <div class="col-10">
-                          <div class="row rounded bg-secondary text-light justify-content-between my-1">
-                            <div class="col-sm-6">Event title</div>
-                            <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                        <div style="height: 200px;" data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                          data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+                          class=" w-100 m-0 overflow-auto" tabindex="0">
+                          <div class="container-fluid m-0 p-0"></div>
+                          <div class="row m-0 p-0">
+                            <div class="col-2 text-center"><span class="display-6">08</span><br>MON</div>
+                            <div class="col-10">
+                              <div class="row rounded bg-primary text-light justify-content-between my-1">
+                                <div class="col-sm-6">Event title</div>
+                                <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                              </div>
+                              <div class="row rounded bg-primary text-light justify-content-between my-1">
+                                <div class="col-sm-6">Event title</div>
+                                <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                              </div>
+                              <div class="row rounded bg-primary text-light justify-content-between my-1">
+                                <div class="col-sm-6">Event title</div>
+                                <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="row rounded bg-secondary text-light justify-content-between my-1">
-                            <div class="col-sm-6">Event title</div>
-                            <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                          <hr>
+                          <div class="row row m-0 p-0">
+                            <div class="col-2 text-center"><span class="display-6">09</span><br>TUE</div>
+                            <div class="col-10">
+                              <div class="row rounded bg-secondary text-light justify-content-between my-1">
+                                <div class="col-sm-6">Event title</div>
+                                <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                              </div>
+                              <div class="row rounded bg-secondary text-light justify-content-between my-1">
+                                <div class="col-sm-6">Event title</div>
+                                <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row m-0 p-0">
-                        <div class="col-2 text-center"><span class="display-6">10</span><br>WED</div>
-                        <div class="col-10">
-                          <div class="row rounded bg-secondary text-light justify-content-between my-1">
-                            <div class="col-sm-6">Event title</div>
-                            <div class="col-sm-6 text-end">9:00am-10:00am</div>
-                          </div>
-                          <div class="row rounded bg-secondary text-light justify-content-between my-1">
-                            <div class="col-sm-6">Event title</div>
-                            <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                          <hr>
+                          <div class="row m-0 p-0">
+                            <div class="col-2 text-center"><span class="display-6">10</span><br>WED</div>
+                            <div class="col-10">
+                              <div class="row rounded bg-secondary text-light justify-content-between my-1">
+                                <div class="col-sm-6">Event title</div>
+                                <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                              </div>
+                              <div class="row rounded bg-secondary text-light justify-content-between my-1">
+                                <div class="col-sm-6">Event title</div>
+                                <div class="col-sm-6 text-end">9:00am-10:00am</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card mx-3 border-0 ">
-                  <div class="card-body ">
-                    <h5>My Journey Progress</h5>
-                    <h7>Journey Title</h7>
-                    <div class="rounded-pill border border-5">
-                      <div class="progress-stacked bg-body">
-                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
-                          aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                          <div class="progress-bar bg-primary"></div>
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
-                          aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                          <div class="progress-bar bg-body-secondary"></div>
+                  <!-- NOTE: if the nested col is half the width it will need the pe-md-0 and ps-md-0 on the left and right boxes -->
+                  <div class="col-md-6 pe-md-0 pb-3">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body">
+                        <h5>Journey Catch-Up</h5>
+                        <div style="height: 180px;" data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                          data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+                          class=" w-100 m-0 overflow-auto" tabindex="0">
+                          <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1 text-primary">Journey Name</h6>
+                              </div>
+                              <ul class="mb-1">
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                              </ul>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1 text-primary">Journey Name</h6>
+                              </div>
+                              <ul class="mb-1">
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                              </ul>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1 text-primary">Journey Name</h6>
+                              </div>
+                              <ul class="mb-1">
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                              </ul>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="progress-stacked bg-body mb-1">
-                      <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment one"
-                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                        <div class="">My Progress<i class="bi bi-arrow-up-short"></i></div>
-                      </div>
-                      <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment two"
-                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                        <div class="">Journey Progress<i class="bi bi-arrow-up-short"></i></div>
+                  </div>
+                  <div class="col-md-6 ps-md-0 pb-3">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body">
+                        <h5>Current Journey Activity</h5>
+                        <div style="height: 180px;" data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                          data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+                          class=" w-100 m-0 overflow-auto" tabindex="0">
+                          <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1 text-primary">Journey Name</h6>
+                              </div>
+                              <ul class="mb-1">
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                              </ul>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1 text-primary">Journey Name</h6>
+                              </div>
+                              <ul class="mb-1">
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                              </ul>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1 text-primary">Journey Name</h6>
+                              </div>
+                              <ul class="mb-1">
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                                <li class="">Milestone Name</li>
+                              </ul>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <h7>Journey Title</h7>
-                    <div class="rounded-pill border border-5">
-                      <div class="progress-stacked bg-body">
-                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
-                          aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                          <div class="progress-bar bg-primary"></div>
+                  </div>
+                  <!-- My Journey widget-->
+                  <div class="col-12 pb-3">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body ">
+                        <h5>My Journey Progress</h5>
+                        <h7>Journey Title</h7>
+                        <div class="rounded-pill border border-5">
+                          <div class="progress-stacked bg-body">
+                            <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
+                              aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                              <div class="progress-bar bg-primary"></div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
+                              aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                              <div class="progress-bar bg-body-secondary"></div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
-                          aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                          <div class="progress-bar bg-body-secondary"></div>
+                        <div class="progress-stacked bg-body mb-1">
+                          <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment one"
+                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="">My Progress<i class="bi bi-arrow-up-short"></i></div>
+                          </div>
+                          <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment two"
+                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                            <div class="">Journey Progress<i class="bi bi-arrow-up-short"></i></div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="progress-stacked bg-body mb-1">
-                      <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment one"
-                        aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                        <div class="">My Progress<i class="bi bi-arrow-up-short"></i></div>
-                      </div>
-                      <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment two"
-                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                        <div class="">Journey Progress<i class="bi bi-arrow-up-short"></i></div>
+                        <h7>Journey Title</h7>
+                        <div class="rounded-pill border border-5">
+                          <div class="progress-stacked bg-body">
+                            <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
+                              aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                              <div class="progress-bar bg-primary"></div>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
+                              aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                              <div class="progress-bar bg-body-secondary"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="progress-stacked bg-body mb-1">
+                          <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment one"
+                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <div class="">My Progress<i class="bi bi-arrow-up-short"></i></div>
+                          </div>
+                          <div class="text-end bg-body-primary" role="progressbar" aria-label="Segment two"
+                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            <div class="">Journey Progress<i class="bi bi-arrow-up-short"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5 p-3 p-lg-0">
-                <div class="card border-0 h-100">
-                  <div class="card-body">
-                    <h5>My Change Agent</h5>
-                    <div class="text-center">
-                      <img src="Images/Placeholders/Profile3.jpg" alt="mdo"
-                        class="rounded-circle compass-role-img text-center"><br>
-                      <h5>Jolette van Vuuren</h5>
-                      <h7><em>Project Manager</em></h7><br>
+              <!-- Col 2 of widgets-->
+              <div class="col-lg-4 p-0">
+                <!-- My Change Agent widget-->
+                <!-- NOTE: the columns that are full height need a bottom patting at the row level -->
+                <div class="row h-100 pb-3">
+                  <div class="col ">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body">
+                        <h5>My Change Agent</h5>
+                        <div class="text-center">
+                          <img src="Images/Placeholders/Profile3.jpg" alt="mdo"
+                            class="rounded-circle compass-role-img text-center"><br>
+                          <h5>Jolette van Vuuren</h5>
+                          <h7><em>Project Manager</em></h7><br>
+                          <div class="btn-group my-3" role="group" aria-label="Basicoutlined">
+                            <button type="button" class="btn btn-outline-primary"><i class="bi bi-chat"></i> Text
+                              Chat</button>
+                            <button type="button" class="btn btn-outline-primary"><i class="bi bi-person-video"></i>
+                              Video
+                              Call</button>
+                            <button type="button" class="btn btn-outline-primary"><i class="bi bi-bookmark-star"></i>
+                              Schedule a Call</button>
+                          </div>
+                          <p class="text-start">We're offering live one-on-one consultations through text chat and video
+                            calls with YOUR change agent. We are here to help you discover the best solutions, along
+                            with
+                            tips on how to get the most out from your change journey. Get started now!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END of Row 1 of widgets-->
+            <!-- Row 2 of widgets-->
+            <div class="row">
+              <!-- Col left of widgets-->
+              <div class="col-lg-4 p-0">
+                <div class="row h-100">
+                  <!-- My Events widget -->
+                  <div class="col-12 pb-3 ">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body">
+                        <h5>Email Communications</h5>
+                        <div style="height: 180px;" data-bs-spy="scroll" data-bs-target="#navbar-example2"
+                        data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+                        class=" w-100 m-0 overflow-auto" tabindex="0">
+                        <div class="list-group">
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h6 class="mb-1 text-primary">Message 1</h6>
+                            </div>
+                           
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h6 class="mb-1 text-primary">Message 1</h6>
+                            </div>
+                            
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h6 class="mb-1 text-primary">Message 1</h6>
+                            </div>
+                           
+                          </a>
+                        </div>
+                      </div>
 
-                      <div class="btn-group my-3" role="group" aria-label="Basicoutlined">
-                        <button type="button" class="btn btn-outline-primary"><i class="bi bi-chat"></i> Text
-                          Chat</button>
-                        <button type="button" class="btn btn-outline-primary"><i class="bi bi-person-video"></i> Video
-                          Call</button>
-                        <button type="button" class="btn btn-outline-primary"><i class="bi bi-bookmark-star"></i>
-                          Schedule a Call</button>
                       </div>
-                      <p class="text-start">We're offering live one-on-one consultations through text chat and video
-                        calls with YOUR change agent. We are here to help you discover the best solutions, along with
-                        tips on how to get the most out from your change journey. Get started now!</p>
+                    </div>
+                  </div>
+                  <!-- My Journey widget-->
+                  <div class="col-12 pb-3">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body ">
+                        <h5>Title Placeholder for Widget</h5>
+                        <p>Place holder text </p>
+                  
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Col right of widgets-->
+              <div class="col-lg-8 p-0">
+                <!-- My Change Agent widget-->
+                <!-- NOTE: the columns that are full height need a bottom patting at the row level -->
+                <div class="row  h-100">
+
+                  <div class="col-12 pb-3">
+                    <div class="card m-2 border-0 h-100">
+                      <div class="card-body">
+                        <h5>About the Program</h5>
+                        <img class="img-fluid rounded mx-auto d-block" src="Images/Placeholders/Group 2513.png">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row mb-3">
-              <div class="col-lg-5 m-0 p-0">
-                <div class="card mx-3 mb-3 border-0">
-                  <div class="card-body">
-                    <h5 class="card-title">My Events</h5>
-                    
-                   
-                  </div>
-                </div>
-                <div class="card mx-3 border-0 ">
-                  <div class="card-body ">
-                    <h5>My Calendar</h5>
-                   
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7 p-3 p-lg-0">
-                <div class="card border-0 h-100">
-                  <div class="card-body">
-                    <h5>About the Program</h5>
-                    
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- END of Row 2 of widgets-->
           </div>
-        </main>
       </div>
-    </div>
+</main>
+</div>
+</div>
 
 
 
-    <!-- This is the START of the Footer-->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 compass-footer  ">
-      <p class="col-4 mb-0 "> </p>
+<!-- This is the START of the Footer-->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 compass-footer  ">
+  <p class="col-4 mb-0 "> </p>
 
-      <a href="/"
-        class="col-4 d-flex align-items-center justify-content-center mb-3 mb-0 me-auto link-body-emphasis text-decoration-none">
-        <img src="Images/FooterLogo.png" alt="">
-      </a>
-
-
-    </footer>
+  <a href="/"
+    class="col-4 d-flex align-items-center justify-content-center mb-3 mb-0 me-auto link-body-emphasis text-decoration-none">
+    <img src="Images/FooterLogo.png" alt="">
+  </a>
 
 
+</footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
 </main>
 </body>
