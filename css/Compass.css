@@ -201,8 +201,9 @@
 }
  .compass-bg-body-darkgray {background-color: #E5E5E5;}
 
+/*___________________________________________________________________*/
 
- @media (max-width: 767px) {
+/* @media (max-width: 767px) {
  .collapseLeft {
   position: absolute;
   left: 0;
@@ -212,4 +213,4 @@
   
 }
 
- }
+ }*/
